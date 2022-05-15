@@ -111,7 +111,6 @@ const CreateView = () => {
           placeholder="Title"
           className={classes.textfield}
           name="title"
-          recquired
         />
 
         <Button onClick={() => savePost()} variant="contained" color="primary">
@@ -124,7 +123,6 @@ const CreateView = () => {
         className={classes.textarea}
         onChange={(e) => handleChange(e)}
         name="desc"
-        recquired
       />
     </Box>
   );

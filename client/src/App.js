@@ -7,7 +7,7 @@ import Home from './components/home/Home';
 import DetailView from './components/post/DetailView';
 import CreateView from './components/post/CreateView';
 import UpdateView from './components/post/UpdateView';
-
+import About from './components/home/About';
 function App() {
   return (
     <BrowserRouter> 
@@ -18,6 +18,7 @@ function App() {
         <Route exact path='/details/:id' component={DetailView}/>
         <Route exact path='/create' component={CreateView}/>
         <Route exact path='/update/:id' component={UpdateView}/>
+        <Route exact path='/about' component={About} />
       </Switch>
     </Box>
     </BrowserRouter> 

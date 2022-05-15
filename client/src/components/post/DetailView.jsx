@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import {useState,useEffect} from 'react';
 import { getPost, deletePost } from '../../service/api';
 import { useHistory } from 'react-router';
+
+
+import Comments from '../comments/Comments';
+
+
 const useStyle=makeStyles((theme)=>({
 
     container:{
@@ -77,6 +82,7 @@ const deleteBlog=async()=>{
        <Typography style={{marginLeft:'auto'}}>{new Date (post.createDate).toDateString()}</Typography>
    </Box>
    <Typography>{post.desc}</Typography>
+   <Comments post={post} />
 </Box>
     )
 }
